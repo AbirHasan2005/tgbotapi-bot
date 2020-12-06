@@ -1,1 +1,1 @@
-worker: python3.7 tgbotapi.py
+worker: python3.8 tgbotapi.py
