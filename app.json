@@ -1,0 +1,27 @@
+{
+    "name": "Telegram Bot",
+    "description": "A Telegram Bot",
+    "repository": "https://github.com/AbirHasan2005/tgbotapi-bot",
+    "logo": "https://telegra.ph/file/9d25c6bc85a8bfcca98df.jpg",
+    "keywords": [
+        "python",
+        "telegram",
+        "api"
+    ],
+    "buildpacks": [{
+    "url": "heroku/python"
+  }],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "BOT_API": {
+            "description": "Bot token from https://t.me/BotFather",
+            "value": "",
+            "required": true
+        }
+    }
+}
